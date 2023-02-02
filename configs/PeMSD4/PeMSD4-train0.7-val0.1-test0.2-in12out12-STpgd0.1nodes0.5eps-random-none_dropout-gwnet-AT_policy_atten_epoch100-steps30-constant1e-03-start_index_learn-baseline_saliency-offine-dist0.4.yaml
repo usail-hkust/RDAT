@@ -1,0 +1,55 @@
+# optimizer
+epochs: 200
+batch_size: 256
+test_batch_size: 64
+loss_func: mse
+patience: 2
+minimum_epoch: 101
+# ST_pgd
+train_num_steps: 5
+train_step_size: 0.1
+train_epsilon: 0.5
+test_num_steps: 5
+test_step_size: 0.1
+test_epsilon: 0.5
+random: True
+train_attack_nodes: 0.1
+test_attack_nodes: 0.8
+dropout_type: none_dropout
+
+# log and save model
+log_interval: 1
+save_freq: 20
+
+# dataset
+dataset: PeMSD4
+num_timesteps_input: 12
+num_timesteps_output: 12
+split_train: 0.7
+split_val: 0.8
+num_features: 1
+num_output_features: 1
+num_nodes: 307
+
+
+#method
+backbone: GWNET
+mode: TRAIN
+train_mode: AT_policy_atten_dist_offline
+distance: l_inf
+rand_start_mode: uniform
+rand_start_step: 1
+find_type: random
+hidden_embedding_dims: 64
+alpha_reg: 0.4
+
+policynet_path: ./checkpoints/PeMSD4/PeMSD4-train0.7-val0.1-test0.2-in12out12-STpgd0.1nodes0.5eps-random-none_dropout-gwnet-AT_policy_atten_epoch100-steps30-constant1e-03-start_index_learn-baseline_saliency-Exps/Exp_id0/policy_epoch100.pt
+tmp_model_dir: ./checkpoints/PeMSD4/PeMSD4-train0.7-val0.1-test0.2-in12out12-STpgd0.1nodes0.5eps-random-none_dropout-gwnet-AT_policy_atten_epoch100-steps30-constant1e-03-start_index_learn-baseline_saliency-offine-dist0.4-Exps
+
+model_dir: ./checkpoints/PeMSD4/PeMSD4-train0.7-val0.1-test0.2-in12out12-STpgd0.1nodes0.5eps-random-none_dropout-gwnet-AT_policy_atten_epoch100-steps30-constant1e-03-start_index_learn-baseline_saliency-offine-dist0.4-Exps
+resume_epoch: 0
+
+# test
+model_path: ./checkpoints/PeMSD4/PeMSD4-train0.7-val0.1-test0.2-in12out12-STpgd0.1nodes0.5eps-random-none_dropout-gwnet-AT_policy_atten_epoch100-steps30-constant1e-03-start_index_learn-baseline_saliency-offine-dist0.4-Exps/best_epoch.pt
+
+

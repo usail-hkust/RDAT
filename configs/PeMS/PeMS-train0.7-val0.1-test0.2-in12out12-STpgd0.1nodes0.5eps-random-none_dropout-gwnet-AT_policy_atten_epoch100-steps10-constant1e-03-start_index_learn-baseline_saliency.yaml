@@ -1,0 +1,56 @@
+# optimizer
+epochs: 200
+batch_size: 256
+test_batch_size: 64
+loss_func: mse
+patience: 2
+minimum_epoch: 101
+# ST_pgd
+train_num_steps: 5
+train_step_size: 0.1
+train_epsilon: 0.5
+test_num_steps: 5
+test_step_size: 0.1
+test_epsilon: 0.5
+random: True
+train_attack_nodes: 0.1
+test_attack_nodes: 0.2
+dropout_type: none_dropout
+
+# log and save model
+log_interval: 1
+save_freq: 20
+
+# dataset
+dataset: PeMS
+num_timesteps_input: 12
+num_timesteps_output: 12
+split_train: 0.7
+split_val: 0.8
+num_features: 2
+num_output_features: 1
+num_nodes: 325
+
+
+
+#method
+backbone: GWNET
+mode: TRAIN
+train_mode: AT_policy_atten
+distance: l_inf
+rand_start_mode: uniform
+rand_start_step: 1
+find_type: random
+hidden_embedding_dims: 64
+num_samples: 10
+constant: 0.001
+is_known_first_node: False
+baseline: saliency
+
+model_dir: ./checkpoints/PeMS-Bay/PeMS-train0.7-val0.1-test0.2-in12out12-STpgd0.1nodes0.5eps-random-none_dropout-gwnet-AT_policy_atten_epoch100-steps10-constant1e-03-start_index_learn-baseline_saliency
+resume_epoch: 0
+
+# test
+model_path: ./checkpoints/PeMS-Bay/PeMS-train0.7-val0.1-test0.2-in12out12-STpgd0.1nodes0.5eps-random-none_dropout-gwnet-AT_policy_atten_epoch100-steps10-constant1e-03-start_index_learn-baseline_saliency/epoch100.pt
+
+
