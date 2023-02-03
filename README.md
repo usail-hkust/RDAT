@@ -11,12 +11,7 @@ Our method effectively enhances the adversarial robustness of spatiotemporal tra
 
 This repository includes:
 - Code for the RDAT in our study.
-- Code and other baselines for our method.
 
-A pytorch implementation for the paper:
-
-Practical Adversarial Attacks on Spatiotemporal
-Traffic Forecasting Models in NeurIPS 2022
 
 ## Environment 
 * [PyTorch](https://pytorch.org/) (tested on 1.8.0)
