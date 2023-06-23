@@ -12,7 +12,9 @@ Our method effectively enhances the adversarial robustness of spatiotemporal tra
 This repository includes:
 - Code for the RDAT in our study.
 ## Introduction
-
+<audio id="audio" controls="" preload="none">
+      <source id="mp4" src="https://github.com/usail-hkust/RDAT/blob/main/video/v2.mp4">
+      </audio>
 
 ## Environment 
 * [PyTorch](https://pytorch.org/) (tested on 1.8.0)
