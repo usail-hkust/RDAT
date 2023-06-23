@@ -11,7 +11,12 @@ Our method effectively enhances the adversarial robustness of spatiotemporal tra
 
 This repository includes:
 - Code for the RDAT in our study.
-
+## Introduction
+```HTML
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+</video>
+```
 
 ## Environment 
 * [PyTorch](https://pytorch.org/) (tested on 1.8.0)
@@ -39,7 +44,29 @@ python train.py configs/PeMSD4/PeMSD4-train0.7-val0.1-test0.2-in12out12-STpgd0.1
 
 
 ```
+## References
+If you find the code useful for your research, please consider citing
+```bib
+@inproceedings{fan2023RBDAT,
+ author =  {Fan LIU, Weijia Zhang, and Hao LIU},
+ title = {Robust Spatiotemporal Traffic Forecasting with Reinforced Dynamic Adversarial Training},
+ booktitle = {In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '23)},
+ year = {2023}
+ }
+```
 
+and/or our related works
+
+
+```bib
+@inproceedings{fan2022ASTFA,
+ author =  {Fan LIU, Hao LIU, Wenzhao JIANG},
+ title = {Practical Adversarial Attacks on Spatiotemporal
+Traffic Forecasting Models},
+ booktitle = {In Proceedings of the Thirty-sixth Annual Conference on Neural Information Processing Systems (NeurIPS)},
+ year = {2022}
+ }
+```
 
 
 
