@@ -14,9 +14,7 @@ This repository includes:
 ## Introduction
 
 ```HTML
-<video width="320" height="240" controls>
-    <source src="https://github.com/usail-hkust/RDAT/blob/main/video/v2.mp4" type="video/mp4">
-</video>
+<video src="https://github.com/usail-hkust/RDAT/blob/main/video/v2.mp4" controls="controls" width="500" height="300"></video>
 ```
 ## Environment 
 * [PyTorch](https://pytorch.org/) (tested on 1.8.0)
