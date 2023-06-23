@@ -13,9 +13,9 @@ This repository includes:
 - Code for the RDAT in our study.
 ## Introduction
 
-<video id="video" controls="" preload="none" poster="https://gitee.com/WhiteMountain/blog-resources/raw/master/Adrift-HD.mp4-poster.png">
-      <source id="mp4" src="https://github.com/usail-hkust/RDAT/blob/main/video/v2.mp4" type="video/mp4">
-      </video>
+![image]([https://github.com/ZhengYaWei1992/ZWProgressView/blob/master/Untitled3.gif](https://github.com/usail-hkust/RDAT/blob/main/video/v2.gif)
+
+
 ## Environment 
 * [PyTorch](https://pytorch.org/) (tested on 1.8.0)
 * [mmcv](https://github.com/open-mmlab/mmcv)
