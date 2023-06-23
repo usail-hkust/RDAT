@@ -13,7 +13,7 @@ This repository includes:
 - Code for the RDAT in our study.
 ## Introduction
 
-![image]([https://github.com/ZhengYaWei1992/ZWProgressView/blob/master/Untitled3.gif](https://github.com/usail-hkust/RDAT/blob/main/video/v2.gif)
+![image]([https://github.com/ZhengYaWei1992/ZWProgressView/blob/master/Untitled3.gif](https://github.com/usail-hkust/RDAT/blob/main/video/v2.gif))
 
 
 ## Environment 
