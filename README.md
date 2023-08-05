@@ -46,11 +46,21 @@ python train.py configs/PeMSD4/PeMSD4-train0.7-val0.1-test0.2-in12out12-STpgd0.1
 If you find the code useful for your research, please consider citing
 ```bib
 @inproceedings{fan2023RBDAT,
- author =  {Fan LIU, Weijia Zhang, and Hao LIU},
- title = {Robust Spatiotemporal Traffic Forecasting with Reinforced Dynamic Adversarial Training},
- booktitle = {In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '23)},
- year = {2023}
- }
+author = {Liu, Fan and Zhang, Weijia and Liu, Hao},
+title = {Robust Spatiotemporal Traffic Forecasting with Reinforced Dynamic Adversarial Training},
+year = {2023},
+isbn = {9798400701030},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3580305.3599492},
+doi = {10.1145/3580305.3599492},
+booktitle = {Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+pages = {1417–1428},
+numpages = {12},
+keywords = {adversarial learning, adversarial training, robust spatiotemporal traffic forecasting},
+location = {Long Beach, CA, USA},
+series = {KDD '23}
+}
 ```
 
 and/or our related works
